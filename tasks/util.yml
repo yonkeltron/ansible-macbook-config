@@ -13,6 +13,7 @@
     - mackup
     - mobile-shell
     - psutils
+    - pv
     - tig
     - wget
     - xz
