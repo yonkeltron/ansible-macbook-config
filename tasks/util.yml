@@ -1,0 +1,20 @@
+- name: utility packages
+  homebrew: name={{ item }} state=latest
+  with_items:
+    - coreutils
+    - curl
+    - figlet
+    - findutils
+    - gawk
+    - git
+    - gnu-sed
+    - gnupg2
+    - graphviz
+    - mackup
+    - mobile-shell
+    - psutils
+    - tig
+    - wget
+    - xz
+- name: aspell with english dictionary
+  homebrew: name=aspell state=latest install_options=with-lang-en

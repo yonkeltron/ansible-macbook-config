@@ -1,0 +1,6 @@
+---
+- name: Main tasks
+  hosts: all
+  tasks:
+    - include: tasks/util.yml
+    - include: tasks/emacs.yml
