@@ -1,0 +1,4 @@
+- name: install zsh
+  homebrew: name=zsh state=latest
+- name: enable as valid shell
+  lineinfile: state=present dest=/etc/shells line=/usr/local/bin/zsh
