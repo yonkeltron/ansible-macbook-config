@@ -1,2 +1,2 @@
 - name: install emacs properly
-  homebrew: name=emacs state=latest install_options=HEAD,use-git-head,cocoa,srgb
+  homebrew: name=emacs state=latest install_options=cocoa,srgb
