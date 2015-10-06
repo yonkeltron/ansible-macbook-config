@@ -1,5 +1,15 @@
-- name: install zsh
+- name: Install zsh
   homebrew: name=zsh state=latest
-- name: enable as valid shell
+- name: Enable as valid shell
   sudo: yes
   lineinfile: state=present dest=/etc/shells line=/usr/local/bin/zsh
+- name: Install Oh My ZSH
+  shell: git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  args:
+    chdir: ~/
+    creates: ~/.oh-my-zsh/
+- name: Initialize a .zshrc file
+  shell: cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+  args:
+    chdir: ~/
+    creates: ~/.zshrc

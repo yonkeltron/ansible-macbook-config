@@ -1,4 +1,4 @@
-- name: utility packages
+- name: Install utility packages
   homebrew: name={{ item }} state=latest
   with_items:
     - archey
@@ -18,5 +18,5 @@
     - tig
     - wget
     - xz
-- name: aspell with english dictionary
+- name: Install aspell with english dictionary
   homebrew: name=aspell state=latest install_options=with-lang-en

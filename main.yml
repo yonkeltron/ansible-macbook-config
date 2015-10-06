@@ -4,4 +4,5 @@
   tasks:
     - include: tasks/util.yml
 #    - include: tasks/emacs.yml
+#    - include: tasks/rvm.yml
     - include: tasks/zsh.yml
