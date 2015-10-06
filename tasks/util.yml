@@ -1,6 +1,7 @@
 - name: utility packages
   homebrew: name={{ item }} state=latest
   with_items:
+    - archey
     - coreutils
     - curl
     - figlet
