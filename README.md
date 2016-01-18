@@ -1,2 +1,2 @@
 
-ansible-playbook -c local --inventory-file=./hosts main.yml
+ansible-playbook -Kc local --inventory-file=./hosts main.yml
